@@ -102,7 +102,7 @@ class Main {
              * with the least load. index [2] is the weight element of the array.
              */
             int lowestLoad = Integer.parseInt(availableDrivers.get(0)[2]);
-            String[] lowestLoad_driver = availableDrivers.get(0);
+            String[] lowestLoadDriver = availableDrivers.get(0);
             /*
              * if there is more than 1 element in list they will be compared using a for
              * loop.
@@ -113,15 +113,15 @@ class Main {
                      * index (i) iterates through different drivers while index [2] returns the
                      * city of that driver.
                      */
-                    int temporary_load = Integer.parseInt(availableDrivers.get(i)[2]);
+                    int temporaryLoad = Integer.parseInt(availableDrivers.get(i)[2]);
                     /*
                      * if the temporary load is less than lowerLoad the temporary load will be the
-                     * new lowestLoad and lowestLoad_driver will get the index where the new
+                     * new lowestLoad and lowestLoadDriver will get the index where the new
                      * lighter load was found for future reference.
                      */
-                    if (temporary_load < lowestLoad) {
+                    if (temporaryLoad < lowestLoad) {
                         lowestLoad = Integer.parseInt(availableDrivers.get(i)[2]);
-                        lowestLoad_driver = availableDrivers.get(i);
+                        lowestLoadDriver = availableDrivers.get(i);
                     }
                 }
             }
@@ -142,7 +142,7 @@ class Main {
             invoice.format("Total: R%s\n\n", theOrder.calculateTotal());
             invoice.format(
                     "%s is nearest to the restaurant so they will be delivering your order at:\n\n%s\n%s\n\n",
-                    lowestLoad_driver[0], theCustomer.streetAddress, theCustomer.city);
+                    lowestLoadDriver[0], theCustomer.streetAddress, theCustomer.city);
             invoice.format("If you need to contact the restaurant, their number is %s.",
                     theRestaurant.contactNumber);
         }
