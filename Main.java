@@ -85,7 +85,7 @@ class Main {
             theRestaurant.contactNumber = consoleScanner.nextLine();
 
             // an order is constructed for the details of the meal order
-            Customer.Order theOrder = theCustomer.new Order(null, null, 0, 0, null);
+            Order theOrder = new Order(null, null, 0, 0, null);
             System.out.println("Provide the order number:");
             theOrder.orderNumber = consoleScanner.nextLine();
             System.out.println("What meal is being ordered?");
