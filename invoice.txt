@@ -1,0 +1,20 @@
+Order number: ZA123
+Customer: NTB
+Email: ntb@gmail.com
+Phone number: 0817568782
+Location: johannesburg
+
+You have ordered the following from Mino in johannesburg:
+
+3 x burger (R23.99)
+
+Special instructions: no
+
+Total: R71.97
+
+Spike Fenton is nearest to the restaurant so they will be delivering your order at:
+
+22 Munday Ave
+johannesburg
+
+If you need to contact the restaurant, their number is 111 222 3214.

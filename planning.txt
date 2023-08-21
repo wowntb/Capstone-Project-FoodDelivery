@@ -1,0 +1,31 @@
+I'll first start be creating the Customer class with the necessary information as attributres:
+    - name : String
+    - contactNumber : String
+    - address : String
+    - city : String
+    - email : String
+
+    within this Customer class there will be a nested/inner class called Order. This class will contain the following as attributes
+   - orderNumber : String
+  - meal : String
+   - price : double
+   - quantity : int
+  - instructions : String
+   - calculateTotal() : double
+
+There must also be a Restaurant class containing:
+    - name : String
+    - city : String
+    - contactNumber : String
+
+A Customer and Restaurant object will be constructed with unspecified values at first. The user will fill in the details as they progress
+through the program. The user will first enter the city of the restaurant and customer. The program must iterate through the provided drivers.txt
+file and find drivers that are in the area.
+	If there are drivers then the user will continue to fill in details of the customer, restaurant, and order.
+	If not, an invoice with an apology will be created stating that there are no drivers to make the delilvery.
+
+The program must include an iterator to find the driver with the lightest load. The first element of the list drivers can be assumed to be the 
+one with the lightest load. The iterator will then compare the load to the rest of the drivers. If the other load is lighter, that load will assigned 
+to the lowest load variable and there will be another variable containing the details of that driver who had the lower load.
+
+At the end the program must have produced the invoice text file with details of the customer, order, and restaurant in an organised structure.
